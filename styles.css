@@ -11,7 +11,7 @@ body {
 
 /* Hero section styles */
 .hero {
-    background-image: linear-gradient(rgba(50, 47, 47, 0.009), rgba(18, 18, 18, 0.653), rgba(0, 0, 0, 0.833)), url('./images/main-image.jpg');
+    background-image: linear-gradient(rgba(50, 47, 47, 0.009), rgba(18, 18, 18, 0.653), rgba(0, 0, 0, 0.833)), url('./images/main-img.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
