@@ -1,0 +1,206 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: linear-gradient(rgba(50, 47, 47, 0.009), rgba(18, 18, 18, 0.653), rgba(0, 0, 0, 0.833)), url('./images/main-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 14% 0 18% 0;
+}
+
+.hero-content {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.hero h1 {
+    font-size: 7vw;
+}
+
+.hero h2 {
+    font-size: 6vw;
+}
+
+.hero span {
+    font-size: 4vw;
+}
+
+/* Black box section styles */
+.black-box {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 4% 0;
+}
+
+.black-box h3 {
+    font-size: 5vw;
+    font-weight: 400;
+}
+
+.black-box span {
+    font-size: 8vw;
+    color: white;
+}
+
+/* Card container section styles */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 4%;
+    background-color: rgba(245, 238, 229, 0.939);
+    padding: 5%;
+    /* position: relative; */
+    height: auto;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+}
+
+.card {
+    width: 95%;
+    max-width: 95%;
+    height: 100%;
+    background-color: #fbf5ef;
+    border-radius: 5%;
+    box-shadow: 0 1vw 1.5vw rgba(0, 0, 0, 0.394);
+    padding: 5%;
+    background-size: cover;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4%;
+}
+
+.card-content h3 {
+    font-size: 2.5vw;
+    margin: 7% 0;
+}
+
+.line{
+    position: absolute;
+    background-color: black;
+    height: 4px;
+    width: 20%;
+    animation: moveLine 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes moveLine {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+        width: 0%;
+    }
+}
+
+/* Bottom section styles */
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f7f1ec;
+}
+
+.contact-me, .about-me {
+    border: 1px solid rgb(171, 165, 166);
+    box-shadow: 2vw 2vw 3vw rgba(0, 0, 0, 0.272);
+    background-color: rgb(242, 230, 236);
+    padding: 2%;
+    width: 90%;
+    height: 10rem;
+    border-radius: 2vw;
+    text-align: center;
+    margin: 4%;
+}
+
+.contact-me h2, .about-me h2 {
+    font-size: 4vw;
+    margin-bottom: 3%;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 800px) {
+    .hero {
+        min-height: 20vh;
+        padding-top: 25%;
+    }
+    .hero h1 {
+        font-size: 10vw;
+    }
+    .hero h2 {
+        font-size: 8vw;
+    }
+    .hero span {
+        font-size: 4vw;
+    }
+    .black-box h3 {
+        font-size: 6vw;
+    }
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 3%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        height: auto;
+    }
+    .card {
+        width: 80%;
+        max-width: 85%;
+        margin-bottom: 3%;
+    }
+    .card img {
+        width: 90%;
+        height: auto;
+        border-radius: 3%;
+    }
+    .grid-item {
+        margin-bottom: 5%;
+    }
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        padding: 12% 6% ;
+        height: 100%;
+    }
+    .contact-me, .about-me {
+        width: 100%;
+        text-align: center;
+        padding: 7%;
+    }
+    .line{
+        margin-top: 8%;
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1120px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+    .bottom{
+        padding: 12% 6%;
+    }
+
+    .line{
+        margin-top: 8%;
+    }
+}
