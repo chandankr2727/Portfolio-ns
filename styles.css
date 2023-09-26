@@ -29,6 +29,7 @@ body {
     color: transparent;
     background-image: linear-gradient(#fff,#fff);
     background-repeat: no-repeat;
+    background-clip: text;
     -webkit-background-clip: text;
     background-position: -76vw 0;
     animation: textAni 5s infinite alternate;
@@ -135,8 +136,8 @@ body {
 
 .contact-me, .about-me {
     border: 1px solid rgb(171, 165, 166);
-    box-shadow: 2vw 2vw 3vw rgba(0, 0, 0, 0.272);
-    background-color: rgb(242, 230, 236);
+    box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.272);
+    background-color: rgb(242, 236, 230);
     padding: 2%;
     width: 90%;
     height: 10rem;
@@ -180,6 +181,10 @@ body {
         max-width: 85%;
         margin-bottom: 3%;
     }
+    .card-content h3 {
+        font-size: 4vw;
+    }
+
     .card img {
         width: 90%;
         height: auto;
@@ -195,9 +200,9 @@ body {
         height: 100%;
     }
     .contact-me, .about-me {
-        width: 100%;
+        width: 95%;
         text-align: center;
-        padding: 7%;
+        padding: 3%;
     }
     .line{
         margin-top: 8%;
@@ -210,7 +215,7 @@ body {
         padding-bottom: 2%;
     }
     .bottom{
-        padding: 12% 6%;
+        padding: 8% 4%;
     }
 
     .line{

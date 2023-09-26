@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Lato&family=Lora:wght@700&display=swap" rel="stylesheet">
     <title>My Developer Portfolio</title>
 </head>
 <body>
+    <div id="main">
     <section class="hero">
-        <div class="hero-content">
+        <div data-scroll data-scroll-speed="1" class="hero-content">
             <h2>Hi,<span> I am Chandan Kumar</span></h2>
             <h1><span>a</span> Full Stack Developer</h1>
         </div>
     </section>
 
-    <section class="black-box">
-        <h3>Work, I can do for you</h3>
-        <h3><span>YOU</span></h3>
+    <section  class="black-box">
+        <h3 data-scroll data-scroll-speed="1.2">Work, I can do for you</h3>
+        <h3 data-scroll data-scroll-speed="1.5"><span>YOU</span></h3>
     </section>
 
     <section class="card-container">
         <div class="grid-item">
             <div class="card card1">
-                <img src="./images/web-dev.jpg" alt="Project 1">
+                <img data-scroll data-scroll-speed="0.5" src="./images/web-dev.jpg" alt="Project 1">
                 <div class="card-content">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -35,7 +37,7 @@
 
         <div class="grid-item">
             <div class="card card2">
-                <img src="./images/mobile-dev.jpg" alt="Project 2">
+                <img data-scroll data-scroll-speed="0.5" src="./images/mobile-dev.jpg" alt="Project 2">
                 <div class="card-content">
                     <h3>App Development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolor dolorem quos!</p>
@@ -45,7 +47,7 @@
 
         <div class="grid-item">
             <div class="card card3">
-                <img src="./images/uiux-dev.jpg" alt="Project 3">
+                <img data-scroll data-scroll-speed="0.5" src="./images/uiux-dev.jpg" alt="Project 3">
                 <div class="card-content">
                     <h3>UI/UX Design</h3>
                     <p>Lorem, ipsum dolo mollitia fugiat. Animi distinctio suscipit labore explicabo dolores, dicta dignissimos soluta.</p>
@@ -65,5 +67,10 @@
             <p>Hi I'm Chandan Kumar. I'm a passionate and dedicated full stack developer with expertise in React.js, JavaScript, HTML, CSS, and Core Java. I recently completed my B.Tech in Computer Science from Sagar Institute of Research and Technology, Bhopal.</p>
         </div>
     </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+
 </body>
 </html>
